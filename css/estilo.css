@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body
+{ 
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex_container > .center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    width: 100%;
+    height: 100px;
+}
+.flex_form
+{
+    width: 400px;
+    display: flex;
+}
+form
+{
+    
+    /*border:1px solid tomato;*/
+    margin-bottom: 70px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.flex_container h1{color: white; padding: 20px}
+
+.controler
+{
+    padding: 10px;
+}
+
+.controler 
+{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.controler input[type="email"], .controler input[type="password"]
+{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid tomato;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.controler input[type="email"]:focus, .controler input[type="password"]:focus
+{
+    outline: none;
+}
+
+::placeholder{font-style: normal; font-family: 'Segoe UI Light';}
+
+.controler i{padding-right: 10px; font-size: 20px; color: tomato;}
+
+.controler input[type="submit"]
+{
+    
+    border-radius: 10px;
+    padding: 14px;
+    width: 100%;
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: ease .8s;
+}
+
+.controler input[type="submit"]:hover{opacity: 0.8;}
+
+.esqueceu
+{
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.esqueceu a{
+    color: white;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Segoe UI Light';
+    transition: ease .8s;
+}
+
+.esqueceu a:hover{color: white;}
+
+span {color: white;}

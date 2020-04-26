@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="center">
+            <h1>Logar</h1>
+            <div class="flex_form">
+                <form>
+                    <div class="controler">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Seu Email">
+                    </div>
+                    <div class="controler">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Sua Senha">
+                    </div>
+                    <div class="controler">
+                        <input type="submit" value="Entrar" class="btn">
+                    </div>
+                    <div class="esqueceu">
+                        <!--<a href="#">Esqueceu?</a>-->
+                        <span class="element"></span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        let option = {
+            strings: ["Olá, esqueceu sua senha, clique no esqueci",
+            "Olá, esqueceu sua senha, clique no esqueci"],
+            typeSpeed: 100,
+            loop: true
+        }
+        let typed = new Typed(".element", option);
+    </script>
+</body>
+</html>
